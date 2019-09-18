@@ -20,7 +20,6 @@ npm run - Build for production
 
 ## App Information
 
-Alt-H2
 
 
 ### Author
