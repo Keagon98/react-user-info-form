@@ -1,6 +1,5 @@
 # React User Information Form
 
-Alt-H1
 
 
 > A form with mutiple steps that takes in user information. Only frontend. It makes use of Material UI
@@ -8,7 +7,6 @@ Alt-H1
 
 ## Start App
 
-Alt-H2
 
 
 npm install - dependencies
