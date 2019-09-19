@@ -17,12 +17,21 @@ export class FormPersonalDetails extends Component {
         this.props.prevStep();
     };
 
+    
+
     render() {
         const { values, handleChange } = this.props;
         return (
             <MuiThemeProvider>
                 <React.Fragment>
                     <AppBar title ="Enter Personal Details" />
+                    <TextField
+                        hintText ="Enter Your Age"
+                        floatingLabelText ="Age"
+                        onChange = {handleChange('age')}
+                        defaultValue = {values.age}
+                    />
+                    <br/>
                     <TextField
                         hintText ="Enter Your Occupation"
                         floatingLabelText ="Occupation"
@@ -43,7 +52,7 @@ export class FormPersonalDetails extends Component {
                         onChange = {handleChange('bio')}
                         defaultValue = {values.bio}
                     />
-                    <br/>
+                    <br />
                     <RaisedButton
                     label="Continue"
                     primary={true}
@@ -52,7 +61,7 @@ export class FormPersonalDetails extends Component {
                     />
                     <RaisedButton
                     label="Back"
-                    primary={false}
+                    secondary={true}
                     style={styles.button}
                     onClick={this.back}
                     />
@@ -64,7 +73,8 @@ export class FormPersonalDetails extends Component {
 
 const styles = {
     button: {
-        margin: 15
+        margin: 15,
+        padding: 2,
     }
 }
 

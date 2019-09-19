@@ -20,7 +20,7 @@ export class FormUserDetails extends Component {
     };
 
     render() {
-        const { values: { firstName, lastName, email, 
+        const { values: { firstName, lastName, email, age, 
             occupation, city, bio} } = this.props;
         return (
             <MuiThemeProvider>
@@ -38,6 +38,10 @@ export class FormUserDetails extends Component {
                          <ListItem 
                         primaryText = "Email"
                         secondaryText = { email }
+                        />
+                         <ListItem 
+                        primaryText = "Age"
+                        secondaryText = { age }
                         />
                          <ListItem 
                         primaryText = "Occupation"
@@ -62,7 +66,7 @@ export class FormUserDetails extends Component {
                     />
                     <RaisedButton
                     label="Back"
-                    primary={false}
+                    secondary={true}
                     style={styles.button}
                     onClick={this.back}
                     />
@@ -74,7 +78,8 @@ export class FormUserDetails extends Component {
 
 const styles = {
     button: {
-        margin: 15
+        margin: 15,
+        padding: 2,
     }
 }
 

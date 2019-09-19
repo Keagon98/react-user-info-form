@@ -17,7 +17,7 @@ export class FormUserDetails extends Component {
         return (
             <MuiThemeProvider>
                 <React.Fragment>
-                    <AppBar title ="Enter User Details" />
+                    <AppBar title ="Enter Your Details" />
                     <TextField
                         hintText ="Enter Your First Name"
                         floatingLabelText ="First Name"
@@ -53,7 +53,8 @@ export class FormUserDetails extends Component {
 
 const styles = {
     button: {
-        margin: 15
+        margin: 15,
+        padding: 2,
     }
 }
 
