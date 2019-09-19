@@ -25,7 +25,7 @@ export class FormUserDetails extends Component {
         return (
             <MuiThemeProvider>
                 <React.Fragment>
-                    <AppBar title ="Confirm User Data" />
+                    <AppBar title ="Confirm that this correct" />
                     <List>
                         <ListItem 
                         primaryText = "First Name"

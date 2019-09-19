@@ -21,7 +21,7 @@ export class Success extends Component {
         return (
             <MuiThemeProvider>
                 <React.Fragment>
-                    <AppBar title ="Success" />
+                    <AppBar title ="Application Successful" />
                    <h1>Thank you for submitting all your information.</h1>
                    <p>We'll be in touch to confirm if your application was successfull.</p>
                 </React.Fragment>
